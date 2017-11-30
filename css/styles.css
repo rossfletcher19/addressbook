@@ -1,0 +1,13 @@
+.panel {
+  margin-top: 30px;
+  width: 80%;
+}
+
+.well {
+  margin-top: 30px;
+  width: 80%;
+}
+
+#cName {
+  font-weight: 500;
+}
