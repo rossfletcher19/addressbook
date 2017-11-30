@@ -4,17 +4,17 @@ $("document").ready(function() {
     var tel = $("input#tel").val();
     var email = $("input#email").val();
 
-    $(".contacts").prepend("<p id='cName'>" + name + "</p>");
-    $(".contacts").prepend("<p id='cTel'>" + tel + "</p>");
-    $(".contacts").prepend("<p id='cEmail'>" + email + "</p>");
-    $(".contacts").prepend("<hr>");
+    $(".contacts").append("<p id='cName'>" + name + "</p>");
+    $(".contacts").append("<p id='cTel'>" + tel + "</p>");
+    $(".contacts").append("<p id='cEmail'>" + email + "</p>");
+    $(".contacts").append("<hr>");
 
-    $("#cTel").hide();
-    $("#cEmail").hide();
+    $("p#cTel").hide();
+    $("p#cEmail").hide();
 
-    $("#cName").click(function() {
-      $(this).prev().toggle();
-      $(this).prev().prev().toggle();
+    $("p#cName").click(function() {
+      $(this).next().toggle();
+      $(this).next().next().toggle();
 
     });
 
